@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <title>Profile Card</title>
+  </head>
+  <body>
+    <div class="card">
+      <img
+        src="/asset/myimage2.JPG"
+        alt="Profile Picture"
+        data-testid="profilePicture"
+      />
+      <h2 data-testid="fullName">Olaode Umoru</h2>
+      <p data-testid="jobTitle">Frontend Developer</p>
+      <p data-testid="shortBio">
+        I am fervently dedicated to sculpting digital canvases that blend beauty
+        and function, ever evolving as a frontend artisan.
+      </p>
+      <p data-testid="currentLocation">Lagos, Nigeria</p>
+      <p data-testid="emailAddress">
+        <a href="mailto:umoruolabode5@gmail.com"
+          >umoruolabode5@gmail.com <i class="fa-solid fa-envelope"></i
+        ></a>
+      </p>
+
+      <div class="social-links" data-testid="socialLinks">
+        <a href="https://www.linkedin.com/in/umoru-olabode/" target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/sub_freeman?igsh=OGsxY201MHZmNG1m&utm_source=qr"
+          target="_blank"
+          ><i class="fa-brands fa-square-instagram"></i
+        ></a>
+        <a href="https://wa.me/message/7AKTRT5UTYCQB1" target="_blank"
+          ><i class="fa-brands fa-square-whatsapp"></i
+        ></a>
+      </div>
+      <p data-testid="currentTimeUTC" id="utc-time"></p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

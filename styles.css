@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --text-clr: #27445D;
+  --primary-color: background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgb(5, 2, 58) 0%, rgba(54,116,181,1) 35%, rgba(0,212,255,1) 100%); 
+  --secondary-color: #D1F8EF;
+  --header-ff: "Alegreya", serif;
+  --body-ff: "Roboto", sans-serif;
+  --font-size-base: clamp(1rem, 2.5vw, 1.2rem);
+  --font-size-title: clamp(1.5rem, 3vw, 2rem);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--primary-color);
+  font-family: var(--body-ff);
+  margin: 0;
+}
+
+.card {
+  background: var(--secondary-color);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 30%;
+  object-fit: cover;
+}
+
+.card img:hover {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.card h2 {
+  font-family: var(--header-ff);
+  font-size: var(--font-size-title);
+  color: var(--text-clr);
+  margin: 0.5rem 0;
+}
+
+.card p {
+  font-size: var(--font-size-base);
+  color: var(--text-clr);
+  margin: 0.5rem 0;
+}
+
+.card a {
+  text-decoration: none;
+  color: var(--text-clr);
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: var(--text-clr);
+  font-size: 1.5rem;  
+}
+
+.social-links a:hover, .card a:hover {
+  color: #3674B5;
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 350px;
+  }
+}
